@@ -21,9 +21,7 @@ export const UIProvider: FC<Props> = ({ children }) => {
     dispatch({ type: 'UI - Open Sidebar' })
   }
 
-  const closeSideMenu = () => {
-    dispatch({ type: 'UI - Close Sidebar' })
-  }
+  const closeSideMenu = () => dispatch({ type: 'UI - Close Sidebar' })
 
   return (
     <UIContext.Provider value={{
